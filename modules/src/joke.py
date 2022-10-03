@@ -17,6 +17,7 @@ def process(input, entities=None):
             message = add_quick_reply(message, 'One more!', modules.generate_postback('joke'))
             message = add_quick_reply(message, 'Show me a quote.', modules.generate_postback('quote'))
             message = add_quick_reply(message, 'Tell me a fact.', modules.generate_postback('fact'))
+            message = add_quick_reply(message, 'Show me a Letterboxd Top 100 Narrative Feature Film.', modules.generate_postback('movies'))
             output['input'] = input
             output['output'] = message
             output['success'] = True
